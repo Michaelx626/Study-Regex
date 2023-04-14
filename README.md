@@ -15,14 +15,18 @@
    
 <h2 align="center" id="Usage">Usage</h2>
 <p align="center">You can access my project, Study Regex, by simply clicking on this highlighted text.</p>
-<p align="center"><a href="${usage}" target="_blank">Here</a></p>
+<p align="center"><a href="https://github.com/Michaelx626/Study-Regex" target="_blank">Here</a></p>
 
 <h2 align="center">Screenshots</h2>
 
-![text](./Develop/public/assets/screenshots/Screen%20Shot%202023-03-02%20at%2010.50.49%20PM.png)
+![text](./Develop/Screenshots/Screen%20Shot%202023-04-14%20at%204.11.07%20AM.png)
 
 <h2 align="center" id="Credits">Credit</h2>
-<p align="center"><a href="https://github.com/coding-boot-camp/miniature-eureka}" target="_blank">Special Thanks to: Xandromus for the starter codes!</a></p>
+<p align="center"><a href="https://github.com/coding-boot-camp/bug-free-goggles" target="_blank">Special Thanks to: Xandromus for the starter codes!</a></p>
+
+<p align="center"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions#advanced_searching_with_flags" target="_blank">MDN on Regex</a></p>
+
+<p align="center"><a href="https://regex101.com/" target="_blank">Regex Testing Site</a></p>
 
 <h2 align="center">Tests</h2>
 <p align="center">N/A</p>
