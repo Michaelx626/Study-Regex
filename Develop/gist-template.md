@@ -34,9 +34,10 @@ Quantifiers are ways to indicate how many of the characters to appear on the str
 This specific quantifier checks for a match depending on the character before the plus sign. For example if the Regex is '/A+' then it looks for all A's in the string. If the string was '123ABC!@#ABC' then it would match both A's. There are other quantifiers that can be useful in some cases.
 
 ### OR Operator
-
+The OR operator is exactly the same as it is intended in Javascript. The OR operator, also called the Pipe symbol '|', means the either the first condition or the second. For example if the Regex is '/A|B' then the matching characters would be both either A OR B. In this same example if the string was '123ABC!@#ABC' then the matching characters would be A OR B.
 
 ### Character Classes
+A character class is the prime exactly I am using for this study guide, '/[0-9a-zA-Z]'. It is simply the range within the brackets that will match the string. You can specify the range to match what you desire. If the Regex was to be '/[0-9]' indicating I would like to match only numbers within the string then the previous example string '123ABC!@#ABC' would match numbers 123 only, returning 3 matches. The user can customize the range with the hyphen to limit or widen his or her search.
 
 ### Flags
 
