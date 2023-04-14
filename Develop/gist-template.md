@@ -52,6 +52,7 @@ A bracket expression, [], is simply a bracket that will contain the characters t
 A greedy and lazy, non-greedy, match are the opposite of one another. A greedy match would match the longest possible string while the lazy, also known as non-greedy, will match the shortest possible string. For example, a greedy match 'a.*b' on a string 'aasabbqweohagbadsbbb' would make the entire string from a to b from the first letter a to the last better b making it a greedy match. On the other hand, a lazy match 'a.*?b', using the same string 'aasabbqweohagbadsbbb' would make the match up until it reaches the first letter b resulting in aasab.
 
 ### Boundaries
+Boundaries are used in assertions. There are several types of boundary type assertions. One of these cases are the caret symbol, ^, which is used to indicate whether to match the first character of the string if it is outside of a bracket expression or to match with all characters that are not inside the bracket expression. For example '/^[0-9a-zA-Z]' on a string '123ABC!@#ABC' would match with the first character which is 1 while '/[^0-9a-zA-Z]' would match with all the non-numerical and non-alphabetical characters which is !@#.
 
 ### Back-references
 
