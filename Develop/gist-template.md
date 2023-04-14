@@ -55,9 +55,13 @@ A greedy and lazy, non-greedy, match are the opposite of one another. A greedy m
 Boundaries are used in assertions. There are several types of boundary type assertions. One of these cases are the caret symbol, ^, which is used to indicate whether to match the first character of the string if it is outside of a bracket expression or to match with all characters that are not inside the bracket expression. For example '/^[0-9a-zA-Z]' on a string '123ABC!@#ABC' would match with the first character which is 1 while '/[^0-9a-zA-Z]' would match with all the non-numerical and non-alphabetical characters which is !@#.
 
 ### Back-references
+A back-reference is a way to say that something was matched previously and reuse it. The expression is used by the back slash symbol, '\'. For example if the Regex was '/hello\sworld' for the string 'hello world this is regex!' then the matching characters would be hello world.
 
 ### Look-ahead and Look-behind
+Look ahead and look behind are assertions that seems very useful in some cases. The look ahead will only match characters by looking for the match ahead of the characters the user has chosen. The look ahead uses the expression '(?= pattern)' while the look behind uses the expression '(?<= pattern)'. Here are some examples, imagine the string is 'orange juice is better than apple juice'. For the look ahead, if we want to match orange but also look ahead of orange to match the pattern otherwise there is no match. We simply use the Regex /orange(?= juice)/ such that orange is a match but we have to look at the next string if it is juice. Similar with look behind, we use the Regex, /(?<=orange )juice/, to match the juice and look behind if the string is orange.
 
 ## Author
+This is a short summary of myself who had no knowledge of Regex until I started writing up this study guide on one of the most common used Regex I have encountered, /[0-9a-zA-Z]. I've been using this Regex without the full knowledge of how it actually works and so I wanted to start digging deeper into depth of Regex. Now I have some knowledge of how Regex works and hopefully this study guide will help guide you towards success as well. 
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Here is a link of my GitHub Profile: https://github.com/Michaelx626.
+
