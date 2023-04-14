@@ -40,10 +40,13 @@ The OR operator is exactly the same as it is intended in Javascript. The OR oper
 A character class is the prime exactly I am using for this study guide, '/[0-9a-zA-Z]'. It is simply the range within the brackets that will match the string. You can specify the range to match what you desire. If the Regex was to be '/[0-9]' indicating I would like to match only numbers within the string then the previous example string '123ABC!@#ABC' would match numbers 123 only, returning 3 matches. The user can customize the range with the hyphen to limit or widen his or her search.
 
 ### Flags
+An example of flag is the letter 'g' after the expression. It is optional but if the user would like to widen his or her search for matches then he or she can perform a global search with the flag. In my previous example in the summary, I used the replace method with the '/[^0-9a-zA-Z]/g'. This is a good way to search for edge cases that are unexpected. There are several other flags that can be used specifically for edge cases but I've used the 'g' after an expression and it has been extremely helpful in limiting my matches.
 
 ### Grouping and Capturing
+Grouping and capturing are related topics when matching expressions. They can be stored and extracted for usage. This is done by using parentheses, (). For example, '/(ABC)/g', being used to match the following string '123ABC!@#ABC' will match both the ABC in the string. This will display the matches into an array for the user to access. [ABC, ABC].
 
 ### Bracket Expressions
+
 
 ### Greedy and Lazy Match
 
