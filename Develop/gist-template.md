@@ -46,9 +46,10 @@ An example of flag is the letter 'g' after the expression. It is optional but if
 Grouping and capturing are related topics when matching expressions. They can be stored and extracted for usage. This is done by using parentheses, (). For example, '/(ABC)/g', being used to match the following string '123ABC!@#ABC' will match both the ABC in the string. This will display the matches into an array for the user to access. [ABC, ABC].
 
 ### Bracket Expressions
-
+A bracket expression, [], is simply a bracket that will contain the characters that the user would like to match within the bracket. In this study guide, we talked about '/[0-9a-zA-Z]' which means the bracket expression contains all numerical values, all alphabetical values case insensitive. In the same example we have been using, if the string is '123ABC!@#ABC' then the bracket will match all values that are numerical and alphabetical resulting in 123ABCABC.
 
 ### Greedy and Lazy Match
+A greedy and lazy, non-greedy, match are the opposite of one another. A greedy match would match the longest possible string while the lazy, also known as non-greedy, will match the shortest possible string. For example, a greedy match 'a.*b' on a string 'aasabbqweohagbadsbbb' would make the entire string from a to b from the first letter a to the last better b making it a greedy match. On the other hand, a lazy match 'a.*?b', using the same string 'aasabbqweohagbadsbbb' would make the match up until it reaches the first letter b resulting in aasab.
 
 ### Boundaries
 
