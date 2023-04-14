@@ -31,8 +31,10 @@ The $ symbol is called what I like to call it as the 'end point' or 'end of the 
 
 ### Quantifiers
 Quantifiers are ways to indicate how many of the characters to appear on the string or expression. An example of a quantifier is 'x+'.
+This specific quantifier checks for a match depending on the character before the plus sign. For example if the Regex is '/A+' then it looks for all A's in the string. If the string was '123ABC!@#ABC' then it would match both A's. There are other quantifiers that can be useful in some cases.
 
 ### OR Operator
+
 
 ### Character Classes
 
